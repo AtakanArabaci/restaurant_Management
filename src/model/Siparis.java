@@ -18,6 +18,11 @@ public class Siparis {
         return adet;
     }
 
+    // 🔥 Eksik olan setter (siparis artırma / azaltma için şart)
+    public void setAdet(int adet) {
+        this.adet = adet;
+    }
+
     public double getToplam() {
         return urun.getFiyat() * adet;
     }

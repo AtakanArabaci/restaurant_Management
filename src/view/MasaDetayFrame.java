@@ -4,6 +4,7 @@ import controller.GarsonController;
 import model.Masa;
 import model.Urun;
 import servis.UrunServisi;
+import view.components.ProductCard;
 
 import javax.swing.*;
 import java.awt.*;
