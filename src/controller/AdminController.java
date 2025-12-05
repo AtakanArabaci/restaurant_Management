@@ -1,16 +1,17 @@
 package controller;
 
-import servis.KullaniciServisi; 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+import model.Masa;
+import model.Siparis;
+import model.Urun;
+import servis.KullaniciServisi;
 import servis.MasaServisi;
 import servis.SiparisServisi;
 import servis.UrunServisi;
-import model.Urun;
-import model.Siparis;
-
-import javax.swing.*;
-import java.util.List;
-import javax.swing.JOptionPane;
-
 
 public class AdminController {
 
@@ -19,15 +20,17 @@ public class AdminController {
     private final MasaServisi masaServisi;
     private final SiparisServisi siparisServisi;
 
-    // PARAMETRESİZ CONSTRUCTOR
-    // Servis nesnelerini kendi içinde oluşturuyoruz.
-    public AdminController() {
-        this.urunServisi = new UrunServisi();
-        this.kullaniciServisi = new KullaniciServisi();
-        this.masaServisi = new MasaServisi();
-        this.siparisServisi = new SiparisServisi();
+    public AdminController(UrunServisi urunServisi,
+                           KullaniciServisi kullaniciServisi,
+                           MasaServisi masaServisi,
+                           SiparisServisi siparisServisi) {
+        this.urunServisi = urunServisi;
+        this.kullaniciServisi = kullaniciServisi;
+        this.masaServisi = masaServisi;
+        this.siparisServisi = siparisServisi;
     }
 
+    // ===== MENÜ KONTROLÜ =====
     public void menuyuKontrolEt() {
 
         StringBuilder sb = new StringBuilder();
@@ -37,44 +40,113 @@ public class AdminController {
         List<Urun> yemekler = urunServisi.kategoriGetir("YEMEK");
         sb.append("YEMEKLER:\n");
         for (Urun u : yemekler) {
-            sb.append(" - ").append(u.getAd()).append(" : ").append(u.getFiyat()).append(" TL\n");
+            sb.append(" - ").append(u.getAd())
+              .append(" : ").append(u.getFiyat())
+              .append(" TL\n");
         }
-
         sb.append("\n");
 
         // TATLILAR
         List<Urun> tatlilar = urunServisi.kategoriGetir("TATLI");
         sb.append("TATLILAR:\n");
         for (Urun u : tatlilar) {
-            sb.append(" - ").append(u.getAd()).append(" : ").append(u.getFiyat()).append(" TL\n");
+            sb.append(" - ").append(u.getAd())
+              .append(" : ").append(u.getFiyat())
+              .append(" TL\n");
         }
-
         sb.append("\n");
 
         // İÇECEKLER
         List<Urun> icecekler = urunServisi.kategoriGetir("ICECEK");
         sb.append("İÇECEKLER:\n");
         for (Urun u : icecekler) {
-            sb.append(" - ").append(u.getAd()).append(" : ").append(u.getFiyat()).append(" TL\n");
+            sb.append(" - ").append(u.getAd())
+              .append(" : ").append(u.getFiyat())
+              .append(" TL\n");
         }
 
-        JOptionPane.showMessageDialog(null,
+        JOptionPane.showMessageDialog(
+                null,
                 sb.toString(),
                 "Menü Kontrolü",
-                JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.INFORMATION_MESSAGE
+        );
     }
 
-
- // 2) GARSON KONTROLÜ
-    public void garsonlariKontrolEt() {
-
-        // KullaniciServisi'nden garson isimlerini al
-        List<String> garsonlar = kullaniciServisi.garsonIsimleriniGetir();
-
-        if (garsonlar == null || garsonlar.isEmpty()) {
+    // MENÜYE ÜRÜN EKLE
+    public void urunEkle(String kategori, String ad, double fiyat, String iconPath) {
+        if (kategori == null || kategori.isBlank()
+                || ad == null || ad.isBlank()) {
             JOptionPane.showMessageDialog(
                     null,
-                    "Sistemde kayıtlı garson bulunmuyor.",
+                    "Kategori ve ürün adı boş olamaz.",
+                    "Ürün Ekle",
+                    JOptionPane.WARNING_MESSAGE
+            );
+            return;
+        }
+
+        boolean basarili = urunServisi.urunEkle(kategori, ad, fiyat, iconPath);
+
+        if (basarili) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Ürün eklendi:\n" + kategori.toUpperCase() +
+                            " -> " + ad + " (" + fiyat + " TL)",
+                    "Ürün Ekle",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Ürün eklenemedi. Bu kategoride aynı isimde ürün olabilir.",
+                    "Ürün Ekle",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
+    }
+
+    // MENÜDEN ÜRÜN SİL
+    public void urunSil(String kategori, String ad) {
+        if (kategori == null || kategori.isBlank()
+                || ad == null || ad.isBlank()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Kategori ve ürün adı boş olamaz.",
+                    "Ürün Sil",
+                    JOptionPane.WARNING_MESSAGE
+            );
+            return;
+        }
+
+        boolean basarili = urunServisi.urunSil(kategori, ad);
+
+        if (basarili) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Ürün silindi:\n" + kategori.toUpperCase() +
+                            " -> " + ad,
+                    "Ürün Sil",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Ürün silinemedi. Bu isimde ürün bulunamadı.",
+                    "Ürün Sil",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
+    }
+
+    // ===== GARSON KONTROLÜ =====
+    public void garsonlariKontrolEt() {
+        List<String> garsonlar = kullaniciServisi.garsonIsimleriniGetir();
+
+        if (garsonlar.isEmpty()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Kayıtlı garson bulunmuyor.",
                     "Garson Kontrolü",
                     JOptionPane.INFORMATION_MESSAGE
             );
@@ -83,9 +155,8 @@ public class AdminController {
 
         StringBuilder sb = new StringBuilder();
         sb.append("=== GARSON LİSTESİ ===\n\n");
-
-        for (String ad : garsonlar) {
-            sb.append("- ").append(ad).append("\n");
+        for (String g : garsonlar) {
+            sb.append("- ").append(g).append("\n");
         }
 
         JOptionPane.showMessageDialog(
@@ -96,42 +167,122 @@ public class AdminController {
         );
     }
 
- 
+    public void garsonEkle(String ad, String sifre) {
+        boolean basarili = kullaniciServisi.garsonEkle(ad, sifre);
 
- // 3) MÜŞTERİ ADINA GÖRE SORGU
-    public void musteriyeGoreSorgula(String musteriAdi) {
-        if (musteriAdi == null || musteriAdi.isBlank()) {
+        if (basarili) {
             JOptionPane.showMessageDialog(
                     null,
-                    "Müşteri adı boş olamaz.",
-                    "Müşteri Sorgu",
+                    "Garson eklendi: " + ad,
+                    "Garson Ekle",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Garson eklenemedi. (Boş alan, aynı isim veya başka bir hata)",
+                    "Garson Ekle",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
+    }
+
+    public void garsonSil(String ad) {
+        boolean basarili = kullaniciServisi.garsonSil(ad);
+
+        if (basarili) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Garson silindi: " + ad,
+                    "Garson Sil",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Garson silinemedi. (Böyle bir garson yok veya admin'i silmeye çalışıyorsun)",
+                    "Garson Sil",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
+    }
+
+    // ===== MASA NUMARASINA GÖRE SORGU =====
+    public void masayaGoreSorgula(String masaNoMetni) {
+        if (masaNoMetni == null || masaNoMetni.isBlank()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Masa numarası boş olamaz.",
+                    "Masa Sorgu",
                     JOptionPane.WARNING_MESSAGE
             );
-            System.out.println("AdminController: Müşteri adı boş olamaz.");
             return;
         }
 
-        List<Siparis> siparisList = siparisServisi.musteriyeGoreSiparisGetir(musteriAdi);
-
-        if (siparisList.isEmpty()) {
+        int masaNo;
+        try {
+            masaNo = Integer.parseInt(masaNoMetni.trim());
+        } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(
                     null,
-                    "Bu isimle kayıtlı sipariş bulunamadı: " + musteriAdi,
-                    "Müşteri Sorgu",
+                    "Masa numarası sayısal olmalıdır.",
+                    "Masa Sorgu",
+                    JOptionPane.ERROR_MESSAGE
+            );
+            return;
+        }
+
+        Masa masa = masaServisi.getMasa(masaNo);
+        if (masa == null) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Bu numarada kayıtlı masa yok: " + masaNo,
+                    "Masa Sorgu",
                     JOptionPane.INFORMATION_MESSAGE
             );
-            System.out.println("AdminController: Müşteri bulunamadı: " + musteriAdi);
+            return;
+        }
+
+        // Masa BOŞ ise direk söyle
+        if ("boş".equalsIgnoreCase(masa.getDurum())) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Masa " + masaNo + " şu an BOŞ.",
+                    "Masa Sorgu",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+            return;
+        }
+
+        // Masa dolu/rezerve ise siparişlere bakalım
+        List<Siparis> tumSiparisler = siparisServisi.tumSiparisleriGetir();
+        List<Siparis> masaSiparisleri = new ArrayList<>();
+
+        for (Siparis s : tumSiparisler) {
+            if (s.getMasaNo() == masaNo) {
+                masaSiparisleri.add(s);
+            }
+        }
+
+        if (masaSiparisleri.isEmpty()) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Masa " + masaNo + " dolu/rezerve görünüyor fakat kayıtlı sipariş bulunamadı.",
+                    "Masa Sorgu",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
             return;
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Müşteri: ").append(musteriAdi).append("\n\n");
+        sb.append("Masa ").append(masaNo)
+          .append(" - Durum: ").append(masa.getDurum().toUpperCase())
+          .append("\n\n");
 
         double toplam = 0.0;
 
-        for (Siparis s : siparisList) {
-            sb.append("Masa ")
-              .append(s.getMasaNo())
+        for (Siparis s : masaSiparisleri) {
+            sb.append("Müşteri: ").append(s.getMusteriAdi())
               .append(" - ")
               .append(s.getUrunAdi())
               .append(" x ")
@@ -152,15 +303,12 @@ public class AdminController {
         JOptionPane.showMessageDialog(
                 null,
                 sb.toString(),
-                "Müşteri Sorgu",
+                "Masa Sorgu",
                 JOptionPane.INFORMATION_MESSAGE
         );
-
-        System.out.println("AdminController: Müşteri adına göre sorgu = " + musteriAdi);
     }
 
-
-    // 4) TARİHE GÖRE SORGU
+    // ===== TARİHE GÖRE SORGU =====
     public void tariheGoreSorgula(String tarihMetni) {
         if (tarihMetni == null || tarihMetni.isBlank()) {
             JOptionPane.showMessageDialog(
@@ -169,7 +317,6 @@ public class AdminController {
                     "Tarih Sorgu",
                     JOptionPane.WARNING_MESSAGE
             );
-            System.out.println("AdminController: Tarih boş olamaz.");
             return;
         }
 
@@ -182,7 +329,6 @@ public class AdminController {
                     "Tarih Sorgu",
                     JOptionPane.INFORMATION_MESSAGE
             );
-            System.out.println("AdminController: Bu tarihte sipariş yok = " + tarihMetni);
             return;
         }
 
@@ -217,12 +363,9 @@ public class AdminController {
                 "Tarih Sorgu",
                 JOptionPane.INFORMATION_MESSAGE
         );
-
-        System.out.println("AdminController: Tarihe göre sorgu = " + tarihMetni);
     }
 
-
-    // 5) GÜN SONU RAPORU
+    // ===== GÜN SONU RAPORU =====
     public void gunSonuAl() {
         List<Siparis> siparisList = siparisServisi.tumSiparisleriGetir();
 
@@ -233,7 +376,6 @@ public class AdminController {
                     "Gün Sonu Raporu",
                     JOptionPane.INFORMATION_MESSAGE
             );
-            System.out.println("AdminController: Gün sonu - hiç sipariş yok.");
             return;
         }
 
@@ -273,8 +415,5 @@ public class AdminController {
                 "Gün Sonu Raporu",
                 JOptionPane.INFORMATION_MESSAGE
         );
-
-        System.out.println("AdminController: Gün sonu raporu alındı.");
     }
-
 }

@@ -1,27 +1,31 @@
 package controller;
 
 import model.Kullanici;
+import servis.KullaniciServisi;
 
 public class LoginController {
 
-    // Şimdilik sabit kullanıcılar
-    private Kullanici admin = new Kullanici("admin", "1234", "admin");
-    private Kullanici garson = new Kullanici("utku", "1234", "garson");
+    private final KullaniciServisi kullaniciServisi;
 
+    public LoginController() {
+        // İçinde admin + utku hazır geliyor
+        this.kullaniciServisi = new KullaniciServisi();
+    }
+
+    // LoginFrame burayı çağırıyor
     public String girisYap(String kullaniciAdi, String sifre) {
+        Kullanici k = kullaniciServisi.girisYap(kullaniciAdi, sifre);
 
-        if (kullaniciAdi.equals(admin.getKullaniciAdi()) &&
-            sifre.equals(admin.getSifre())) {
-
-            return "admin";
+        if (k == null) {
+            return "hata";          // yanlış kullanıcı / şifre
         }
 
-        if (kullaniciAdi.equals(garson.getKullaniciAdi()) &&
-            sifre.equals(garson.getSifre())) {
+        // "admin" veya "garson" döner
+        return k.getRol();
+    }
 
-            return "garson";
-        }
-
-        return "hata"; // yanlış giriş
+    // AdminController vs. gerekirse servise buradan ulaşabilir
+    public KullaniciServisi getKullaniciServisi() {
+        return kullaniciServisi;
     }
 }
