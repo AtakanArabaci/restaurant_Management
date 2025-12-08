@@ -26,7 +26,7 @@ public class TatliListeFrame extends JFrame {
         ust.setOpaque(false);
         ust.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
 
-        JLabel lblBaslik = new JLabel(" Tatlı Çeşitlerimiz - Masa: " + masa.getMasaNo() + "");
+        JLabel lblBaslik = new JLabel(" Tatlı Çeşitlerimiz  - Masa: " + masa.getMasaNo() + "");
         lblBaslik.setFont(new Font("Segoe UI", Font.BOLD, 26));
         lblBaslik.setForeground(Color.WHITE);
 

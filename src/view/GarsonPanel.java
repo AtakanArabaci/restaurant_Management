@@ -12,14 +12,14 @@ import java.util.Map;
 
 public class GarsonPanel extends JFrame {
 
-    public static GarsonPanel INSTANCE;  // 🔥 Global referans
+    public static GarsonPanel INSTANCE;   // 🔥 Global referans
 
     private MasaServisi masaServisi;
     private java.util.List<MasaCard> kartlar = new ArrayList<>();
 
     public GarsonPanel() {
 
-        INSTANCE = this; // 🔥 Burada atanıyor
+        INSTANCE = this; // 🔥 diğer ekranlar buradan erişiyor
 
         masaServisi = new MasaServisi();
 
@@ -55,10 +55,19 @@ public class GarsonPanel extends JFrame {
         setVisible(true);
     }
 
-    // 🔥 MASA RENKLERİNİ TEKRAR ÇİZDİR
+    // 🔥 SiparisDetayFrame burayı kullanıyor
+    public MasaServisi getMasaServisi() {
+        return masaServisi;
+    }
+
+    // ======================================================
+    // 🔥 MASA RENKLERİ VE DURUMLARI ANINDA GÜNCELLENSİN
+    // ======================================================
     public void yenileMasalar() {
         for (MasaCard card : kartlar) {
             card.guncelle();
         }
+        revalidate();
+        repaint();
     }
 }

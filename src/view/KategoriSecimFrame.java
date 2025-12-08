@@ -5,7 +5,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import view.components.BackgroundPanel; // 🔥 EKLENDİ
+import view.components.BackgroundPanel;
 
 public class KategoriSecimFrame extends JFrame {
 
@@ -20,25 +20,19 @@ public class KategoriSecimFrame extends JFrame {
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // ============================================
-        // 🔥 ANA PANEL → ARKA PLAN FOTOĞRAFLI
-        // ============================================
         BackgroundPanel arkaPlan = new BackgroundPanel("icons/garson_bg.jpg");
         arkaPlan.setLayout(new BorderLayout());
         add(arkaPlan, BorderLayout.CENTER);
 
-        // ============================================
-        // ÜST BAR
-        // ============================================
+        // ================== ÜST BAR ==================
         JPanel topBar = new JPanel(new BorderLayout());
-        topBar.setOpaque(false);  // 🔥 ŞEFFAF
+        topBar.setOpaque(false);
         topBar.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
 
         JLabel lblMasa = new JLabel("Masa ID: " + masa.getMasaNo());
         lblMasa.setFont(new Font("Segoe UI", Font.BOLD, 24));
-        lblMasa.setForeground(Color.WHITE); // 🔥 Arka planda görünmesi için
+        lblMasa.setForeground(Color.WHITE);
 
-        // ---------- GERİ BUTONU (SOFT KIRMIZI) ----------
         ImageIcon geriIcon = new ImageIcon("icons/ger.png");
         Image geriImg = geriIcon.getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH);
         geriIcon = new ImageIcon(geriImg);
@@ -54,28 +48,20 @@ public class KategoriSecimFrame extends JFrame {
 
         btnGeri.addMouseListener(new MouseAdapter() {
             @Override
-            public void mouseEntered(MouseEvent e) {
-                btnGeri.setBackground(new Color(255, 76, 76));
-            }
-
+            public void mouseEntered(MouseEvent e) { btnGeri.setBackground(new Color(255, 76, 76)); }
             @Override
-            public void mouseExited(MouseEvent e) {
-                btnGeri.setBackground(new Color(255, 107, 107));
-            }
+            public void mouseExited(MouseEvent e) { btnGeri.setBackground(new Color(255, 107, 107)); }
         });
 
         btnGeri.addActionListener(e -> dispose());
 
         topBar.add(lblMasa, BorderLayout.WEST);
         topBar.add(btnGeri, BorderLayout.EAST);
-
         arkaPlan.add(topBar, BorderLayout.NORTH);
 
-        // ============================================
-        // KATEGORİ GRID PANELİ
-        // ============================================
+        // ================== KATEGORİ KARTLARI ==================
         JPanel grid = new JPanel(new GridLayout(1, 3, 30, 30));
-        grid.setOpaque(false);  // 🔥 Arka plan görünsün
+        grid.setOpaque(false);
         grid.setBorder(BorderFactory.createEmptyBorder(40, 40, 40, 40));
 
         grid.add(createKategoriCard("Yemek", "icons/yemek.jpg"));
@@ -84,17 +70,71 @@ public class KategoriSecimFrame extends JFrame {
 
         arkaPlan.add(grid, BorderLayout.CENTER);
 
-        // ============================================
-        // ALT PANEL - SİPARİŞ DETAYLARI
-        // ============================================
-        JButton btnSiparisDetay = new JButton("🧾 Sipariş Detayları");
-        btnSiparisDetay.setFont(new Font("Segoe UI", Font.BOLD, 16));
+        // ================== ALT BAR — SİPARİŞ DETAYLARI ==================
+     // ================== ALT BAR — SİPARİŞ DETAYLARI ==================
+        JButton btnSiparisDetay = new JButton("Sipariş Detayları") {
+
+            @Override
+            protected void paintComponent(Graphics g) {
+                Graphics2D g2 = (Graphics2D) g;
+                g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+
+                // 🔥 Gradient turuncu renk
+                GradientPaint gp = new GradientPaint(
+                        0, 0,
+                        new Color(211, 138, 75),   // #d38a4b
+                        getWidth(), 0,
+                        new Color(196, 115, 46)    // #c4732e
+                );
+
+                g2.setPaint(gp);
+                g2.fillRoundRect(0, 0, getWidth(), getHeight(), 40, 40);
+
+                super.paintComponent(g);
+            }
+        };
+
+        btnSiparisDetay.setOpaque(false);
+        btnSiparisDetay.setContentAreaFilled(false);
+        btnSiparisDetay.setBorderPainted(false);
         btnSiparisDetay.setFocusPainted(false);
-        btnSiparisDetay.setPreferredSize(new Dimension(200, 50));
-        btnSiparisDetay.setBackground(new Color(225, 225, 225));
+
+        btnSiparisDetay.setForeground(Color.WHITE);
+        btnSiparisDetay.setFont(new Font("Segoe UI", Font.BOLD, 18));
+        btnSiparisDetay.setPreferredSize(new Dimension(250, 55));
+        btnSiparisDetay.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        // Hover efekti
+        btnSiparisDetay.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnSiparisDetay.setForeground(new Color(255, 240, 220)); // Açık beyaz
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnSiparisDetay.setForeground(Color.WHITE);
+            }
+        });
+
+
+        // Hover efekti
+        btnSiparisDetay.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnSiparisDetay.setBackground(new Color(41, 128, 185));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnSiparisDetay.setBackground(new Color(52, 152, 219));
+            }
+        });
+
+        btnSiparisDetay.addActionListener(e -> new SiparisDetayFrame(masa));
 
         JPanel bottomPanel = new JPanel();
-        bottomPanel.setOpaque(false); // 🔥 Arka plan görünsün
+        bottomPanel.setOpaque(false);
         bottomPanel.add(btnSiparisDetay);
 
         arkaPlan.add(bottomPanel, BorderLayout.SOUTH);
@@ -102,16 +142,16 @@ public class KategoriSecimFrame extends JFrame {
         setVisible(true);
     }
 
-    // =====================================================================
-    // KATEGORİ KARTI – FOTOĞRAFLI & HOVER ANİMASYONLU (Aynı bende)
-    // =====================================================================
+    // ================== KATEGORİ KARTI ==================
     private JPanel createKategoriCard(String kategoriAdi, String imgPath) {
 
         ImageIcon icon = new ImageIcon(imgPath);
         Image img = icon.getImage();
 
+        // hover bilgisini dışarıdan da değiştirebilmek için dizi kullanıyoruz
+        final boolean[] hover = { false };
+
         JPanel card = new JPanel() {
-            boolean hover = false;
 
             @Override
             protected void paintComponent(Graphics g) {
@@ -119,34 +159,37 @@ public class KategoriSecimFrame extends JFrame {
                 Graphics2D g2 = (Graphics2D) g;
                 g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
-                // ARKA PLAN FOTO
                 g2.drawImage(img, 0, 0, getWidth(), getHeight(), null);
 
-                // KAPATMA (darken)
-                g2.setColor(new Color(0, 0, 0, hover ? 40 : 70));
+                // Hover efekti
+                g2.setColor(new Color(0, 0, 0, hover[0] ? 40 : 70));
                 g2.fillRoundRect(0, 0, getWidth(), getHeight(), 25, 25);
 
-                // KATEGORİ ADI
                 g2.setColor(Color.WHITE);
                 g2.setFont(new Font("Segoe UI", Font.BOLD, 22));
                 FontMetrics fm = g2.getFontMetrics();
-                int textX = (getWidth() - fm.stringWidth(kategoriAdi)) / 2;
-                int textY = (getHeight() + fm.getAscent()) / 2 - 10;
-                g2.drawString(kategoriAdi, textX, textY);
+
+                int x = (getWidth() - fm.stringWidth(kategoriAdi)) / 2;
+                int y = (getHeight() + fm.getAscent()) / 2 - 10;
+
+                g2.drawString(kategoriAdi, x, y);
             }
         };
 
         card.setOpaque(false);
         card.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
 
+        // Hover + click
         card.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
+                hover[0] = true;
                 card.repaint();
             }
 
             @Override
             public void mouseExited(MouseEvent e) {
+                hover[0] = false;
                 card.repaint();
             }
 

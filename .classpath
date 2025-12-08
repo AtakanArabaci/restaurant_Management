@@ -46,5 +46,6 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Utku Bera/Desktop/itext/itextpdf-5.5.13.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

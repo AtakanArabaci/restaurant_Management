@@ -35,7 +35,7 @@ public class MasaCard extends JPanel {
 
             @Override
             public void mouseClicked(MouseEvent e) {
-                new KategoriSecimFrame(masa); // aç
+                new KategoriSecimFrame(masa);
             }
         });
     }
@@ -77,7 +77,9 @@ public class MasaCard extends JPanel {
         g2.dispose();
     }
 
+    // 🔥 MASA DURUMU DEĞİŞTİĞİNDE ANINDA RENK GÜNCELLENSİN
     public void guncelle() {
-        repaint();
+        revalidate();   // layout yenile
+        repaint();      // görünümü yenile
     }
 }
