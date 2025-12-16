@@ -26,62 +26,67 @@ import java.time.temporal.ChronoUnit;
 
 public class AdminPanel extends JFrame {
 
-    public AdminPanel() {
-        setTitle("Admin Paneli");
-        setSize(500, 400);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
+	public AdminPanel() {
 
-        BackgroundPanel bg = new BackgroundPanel("icons/garson_bg.jpg");
-        bg.setLayout(new BorderLayout());
-        add(bg, BorderLayout.CENTER);
+	    setTitle("Admin Paneli");
+	    setSize(900, 700);
+	    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    setLocationRelativeTo(null);
 
-        // ÜST BAR (Başlık + Geri)
-        JPanel topBar = new JPanel(new BorderLayout());
-        topBar.setOpaque(false);
+	    // ARKA PLAN
+	    BackgroundPanel bg = new BackgroundPanel("icons/garson_bg.jpg");
+	    bg.setLayout(new BorderLayout());
+	    add(bg, BorderLayout.CENTER);
 
-        JLabel lblBaslik = new JLabel("Admin Paneli", SwingConstants.LEFT);
-        lblBaslik.setFont(new Font("Segoe UI", Font.BOLD, 36));
-        lblBaslik.setForeground(Color.WHITE);
-        lblBaslik.setBorder(BorderFactory.createEmptyBorder(20, 20, 10, 20));
+	    // ===================== ÜST BAR =====================
+	    JPanel topBar = new JPanel(new BorderLayout());
+	    topBar.setPreferredSize(new Dimension(900, 90));
+	    topBar.setBackground(new Color(0, 0, 0, 140));
+	    topBar.setOpaque(true);
+	    topBar.setBorder(BorderFactory.createEmptyBorder(15, 20, 15, 20));
 
-        JButton btnGeri = new JButton("Geri");
-        btnGeri.setFont(new Font("Segoe UI", Font.BOLD, 14));
-        btnGeri.addActionListener(e -> {
-            dispose();
-            new LoginFrame().setVisible(true);
-        });
+	    // BAŞLIK
+	    JLabel lblBaslik = new JLabel("Admin Paneli");
+	    lblBaslik.setFont(new Font("Segoe UI", Font.BOLD, 36));
+	    lblBaslik.setForeground(Color.WHITE);
 
-        topBar.add(lblBaslik, BorderLayout.WEST);
-        topBar.add(btnGeri, BorderLayout.EAST);
+	    // GERİ BUTONU
+	    JButton btnGeri = createGeriButonu(this, new LoginFrame());
 
-        bg.add(topBar, BorderLayout.NORTH);
+	    // YERLEŞTİR
+	    topBar.add(lblBaslik, BorderLayout.WEST);
+	    topBar.add(btnGeri, BorderLayout.EAST);
 
-        // ORTA KISIM - KARTLAR
-        JPanel grid = new JPanel(new GridLayout(2, 3, 25, 25));
-        grid.setOpaque(false);
-        grid.setBorder(BorderFactory.createEmptyBorder(40, 40, 40, 40));
-        bg.add(grid, BorderLayout.CENTER);
+	    bg.add(topBar, BorderLayout.NORTH);
 
-        grid.add(createMenuCard("Menü Kontrolü", "Ürün ekle / sil",
-                () -> new AdminKategoriSecimFrame()));
+	    // ===================== ORTA ALAN =====================
+	    JPanel grid = new JPanel(new GridLayout(2, 3, 25, 25));
+	    grid.setOpaque(false);
+	    grid.setBorder(BorderFactory.createEmptyBorder(40, 40, 40, 40));
+	    bg.add(grid, BorderLayout.CENTER);
 
-        grid.add(createMenuCard("Garson Kontrolü", "Garson ekle / sil",
-                () -> new AdminGarsonListeFrame()));
+	    grid.add(createMenuCard("Menü Kontrolü", null, () -> {
+	        setVisible(false);                 // AdminPanel’i gizle (dispose ETME)
+	        new AdminKategoriSecimFrame(this); // parent olarak this gönder
+	    }));
 
-        grid.add(createMenuCard("Masa No'ya Göre Sorgu", "Masaya ait siparişleri gör",
-                () -> new MasaListesiFrame()));
 
-        grid.add(createMenuCard("Tarihe Göre Sırala", "Tüm siparişleri zaman sırasına göre gör",
-                this::acTarihSiralaPenceresi));
+	    grid.add(createMenuCard("Garson Kontrolü", null,
+	            () -> new AdminGarsonListeFrame()));
 
-        grid.add(createMenuCard("Gün Sonu Raporu", "Ciro raporu",
-                () -> placeholder("Gün sonu")));
+	    grid.add(createMenuCard("Masa No'ya Göre Sorgu", null,
+	            () -> new MasaListesiFrame()));
 
-        grid.add(new JLabel());
+	    grid.add(createMenuCard("Tarihe Göre Sırala", null,
+	            this::acTarihSiralaPenceresi));
 
-        setVisible(true);
-    }
+	    grid.add(createMenuCard("Gün Sonu Raporu", null,
+	            () -> placeholder("Gün sonu")));
+
+	    grid.add(new JLabel());
+
+	    setVisible(true);
+	}
 
     // ======================= MENÜ KONTROLÜ =======================
     private void acMenuYonetimiPenceresi() {
@@ -552,7 +557,59 @@ public class AdminPanel extends JFrame {
         return card;
     }
 
-    private void placeholder(String msg) {
-        JOptionPane.showMessageDialog(this, msg + " ekranı daha yapılmadı.");
+    private JButton createGeriButonu(JFrame current, JFrame target) {
+
+        // ikon yükle + küçült
+        ImageIcon icon = new ImageIcon("icons/ger.png");
+        Image img = icon.getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH);
+        icon = new ImageIcon(img);
+
+        JButton btn = new JButton("  Geri", icon);
+        btn.setFont(new Font("Segoe UI", Font.BOLD, 15));
+        btn.setForeground(Color.WHITE);
+
+        // KIRMIZI ZEMİN
+        Color normal = new Color(255, 107, 107);
+        Color hover  = new Color(255, 76, 76);
+
+        btn.setBackground(normal);
+        btn.setOpaque(true);
+        btn.setBorderPainted(false);
+        btn.setFocusPainted(false);
+        btn.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+
+        // 🔥 ÖNEMLİ: BOYUT DEĞİL, PADDING
+        btn.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
+        btn.setIconTextGap(10);
+        btn.setHorizontalAlignment(SwingConstants.LEFT);
+
+        // HOVER EFEKTİ
+        btn.addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseEntered(java.awt.event.MouseEvent e) {
+                btn.setBackground(hover);
+            }
+            @Override
+            public void mouseExited(java.awt.event.MouseEvent e) {
+                btn.setBackground(normal);
+            }
+        });
+
+        // AKSİYON
+        btn.addActionListener(e -> {
+            current.dispose();
+            target.setVisible(true);
+        });
+
+        return btn;
     }
+
+
+
+    private void placeholder(String msg) {
+        JOptionPane.showMessageDialog(this, msg + " ekranı henüz yapılmadı.");
+    }
+
+
 }
+

@@ -20,27 +20,46 @@ public class GarsonPanel extends JFrame {
     public GarsonPanel() {
 
         INSTANCE = this; // 🔥 diğer ekranlar buradan erişiyor
-
         masaServisi = MasaServisi.getInstance();
-
 
         setTitle("Garson Paneli");
         setSize(900, 700);
         setLocationRelativeTo(null);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // ❗ ÇOK ÖNEMLİ
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
+
         setLayout(new BorderLayout());
 
         BackgroundPanel anaPanel = new BackgroundPanel("icons/garson_bg.jpg");
         anaPanel.setLayout(new BorderLayout());
         add(anaPanel, BorderLayout.CENTER);
 
+        // =================== ÜST BAR ===================
+        JPanel topBar = new JPanel(new BorderLayout());
+        topBar.setOpaque(false);
+        topBar.setBorder(BorderFactory.createEmptyBorder(15, 20, 15, 20));
+
+        JButton btnGeri = new JButton("Geri");
+        btnGeri.setFont(new Font("Segoe UI", Font.BOLD, 14));
+        btnGeri.addActionListener(e -> {
+            dispose();
+            new LoginFrame().setVisible(true);
+        });
+
         JLabel baslik = new JLabel("Garson Girişi", SwingConstants.CENTER);
         baslik.setFont(new Font("Segoe UI", Font.BOLD, 36));
         baslik.setForeground(Color.WHITE);
-        anaPanel.add(baslik, BorderLayout.NORTH);
 
-        JPanel gridPanel = new JPanel();
-        gridPanel.setLayout(new GridLayout(3, 3, 25, 25));
+        topBar.add(btnGeri, BorderLayout.WEST);
+        topBar.add(baslik, BorderLayout.CENTER);
+
+        anaPanel.add(topBar, BorderLayout.NORTH);
+        
+
+        // =================== MASA GRID ===================
+        JPanel gridPanel = new JPanel(new GridLayout(3, 3, 25, 25));
         gridPanel.setOpaque(false);
         gridPanel.setBorder(BorderFactory.createEmptyBorder(30, 30, 30, 30));
 
