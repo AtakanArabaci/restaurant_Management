@@ -1,0 +1,7 @@
+1;Pizza;6
+2;Hamsi;1
+2;Mantı;1
+2;Kebap;1
+4;Hamsi;1
+4;Mantı;1
+5;Pizza;3
