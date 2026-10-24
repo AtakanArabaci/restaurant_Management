@@ -1,0 +1,4 @@
+admin;1234;admin
+utku;1234;garson;Utku Bera Özkan
+asd;asd;garson;asd
+utku2;12345;garson;utku bera özkan

@@ -1,0 +1,37 @@
+Su;x;100
+Sıcak Çikolata;x;100
+Cheesecake;x;50
+Döner;x;50
+Milkshake;x;100
+Kebap;x;99
+Künefe;x;50
+Ayran;x;100
+Makarna;x;50
+Sütlaç;x;50
+İçli Köfte;x;100
+İrmik Helvası;x;50
+Katmer;x;50
+Sufle;x;50
+Kola;x;100
+Maraş Tava;x;100
+Mantı;x;98
+Soda;x;100
+Çökertme;x;100
+Şalgam;x;100
+Sprite;x;200
+Meyve Suyu;x;200
+Profiterol;x;50
+Maraş Dondurması;x;50
+Fanta;x;200
+Tantuni;x;50
+Trileçe;x;50
+Lahmacun;x;50
+Hamsi;x;48
+Pizza;x;0
+Türk Kahvesi;x;100
+Fıstık Sarma;x;100
+Tavuk Şiş;x;50
+Pasta;x;50
+Baklava;x;50
+Iskender;x;100
+Çay;x;200

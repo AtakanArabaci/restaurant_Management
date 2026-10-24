@@ -1,0 +1,19 @@
+İçli Köfte;23;yemek;icons/iclikofte.jpg
+Mantı;4665;yemek;icons/manti.jpg
+Pizza;46;yemek;icons/pizza.jpg
+Kebap;25;yemek;icons/kebap.jpg
+Maraş Tava;23;yemek;icons/marastava.jpg
+Kola;15;icecek;icons/kola.jpg
+Ayran;10;icecek;icons/ayran.jpg
+Şalgam;12;icecek;icons/salgam.jpg
+Künefe;28;tatli;icons/kunefe.jpg
+Baklava;30;tatli;icons/baklava.jpg
+Sütlaç;20;tatli;icons/sutlac.jpg
+Iskender;2323;yemek;icons/iskender.jpg
+Tantuni;223;yemek;icons/tantuni.jpg
+Meyve Suyu;1231;icecek;icons/meyvesuyu.jpg
+Sprite;1231;icecek;icons/sprite.jpg
+Fanta;23;icecek;icons/fanta.jpg
+Çay;545;icecek;icons/cay.jpg
+Fıstık Sarma;123;tatli;icons/fistiksarma.jpg
+Çökertme;21;yemek;icons/cokertme.jpg

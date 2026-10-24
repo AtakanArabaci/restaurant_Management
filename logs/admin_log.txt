@@ -1,0 +1,351 @@
+[17.12.2025 19:41:28] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 19:41:31] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[17.12.2025 19:41:35] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[17.12.2025 19:41:36] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[17.12.2025 19:41:37] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[17.12.2025 19:41:39] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[17.12.2025 19:42:32] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 19:43:09] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[17.12.2025 19:44:39] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 19:44:40] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[17.12.2025 19:45:06] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 19:45:07] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[17.12.2025 19:45:55] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 19:45:57] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[17.12.2025 19:45:58] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[17.12.2025 19:46:00] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[17.12.2025 19:49:34] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 19:49:37] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[17.12.2025 19:49:40] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[17.12.2025 19:49:42] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[17.12.2025 21:29:05] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 21:29:08] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[17.12.2025 21:29:18] GARSON EKLE - Eklendi: eskiKA=-, yeniKA=bera, adSoyad=bera
+[17.12.2025 21:29:46] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 21:29:48] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[17.12.2025 21:29:55] GARSON EKLE - Eklendi: eskiKA=-, yeniKA=kadir, adSoyad=kadir orak
+[17.12.2025 21:30:44] ADMIN PANEL - Admin paneli açıldı.
+[17.12.2025 21:30:46] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 01:07:30] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 01:07:31] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 01:07:37] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 01:07:39] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 01:07:42] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 01:07:44] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[18.12.2025 01:07:51] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[18.12.2025 01:08:05] GARSON SİL - Silindi: kullaniciAdi=bera, adSoyad=bera
+[18.12.2025 01:08:42] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 01:17:14] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 01:17:16] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 01:23:58] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 01:23:59] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 01:24:20] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 01:24:24] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 01:25:48] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 01:25:49] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 02:25:42] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 02:25:45] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 02:28:08] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[18.12.2025 02:28:22] GARSON SİL - Silindi: kullaniciAdi=kadir, adSoyad=kadir orak
+[18.12.2025 02:28:48] GARSON EKLE - Eklendi: eskiKA=-, yeniKA=kadir, adSoyad=kadir orak
+[18.12.2025 02:28:51] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 02:29:23] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 02:29:25] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 02:29:38] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 02:30:15] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 02:30:15] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 02:30:58] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 02:32:27] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 02:32:30] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 02:32:33] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 02:34:50] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 02:34:57] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 11:21:34] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 11:21:36] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 11:22:27] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[18.12.2025 11:22:52] GARSON EKLE - Eklendi: eskiKA=-, yeniKA=asd, adSoyad=asd
+[18.12.2025 11:23:06] GARSON SİL - Silindi: kullaniciAdi=kadir, adSoyad=kadir orak
+[18.12.2025 11:23:12] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 11:23:20] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 11:23:30] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 11:23:39] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 11:23:43] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 11:23:58] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 11:24:29] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 11:24:31] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 11:24:33] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 17:51:15] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 17:51:16] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 17:51:21] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 17:51:47] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 17:51:51] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 18:01:46] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:01:47] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 18:01:54] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:03:45] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:03:46] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:13:05] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:13:07] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:14:21] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:14:22] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:15:32] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:15:32] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:21:50] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:21:51] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:24:00] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:24:01] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:25:15] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:25:16] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 18:26:08] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:30:59] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:31:00] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:51:44] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:51:45] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 18:57:16] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 18:57:16] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 19:08:14] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 19:08:15] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 19:12:52] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 19:12:52] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 19:14:19] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 19:14:20] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 19:15:14] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 19:15:14] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 19:15:54] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 19:15:57] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 19:15:59] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[18.12.2025 19:16:00] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 19:21:42] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 19:21:43] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 19:21:48] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 20:13:32] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 20:13:46] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 20:22:33] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 20:22:34] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 20:23:06] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 20:23:11] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 20:28:30] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 20:28:31] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 20:28:36] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 20:29:00] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 20:31:47] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 20:31:48] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 20:40:38] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 20:40:38] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 20:54:17] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 20:54:17] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:05:43] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:05:44] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:06:12] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:06:13] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:06:48] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:06:49] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:20:12] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:20:13] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:26:20] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:26:20] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:46:43] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:46:44] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:48:58] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:48:59] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:53:26] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:53:28] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 21:54:18] ADMIN PANEL - Admin paneli açıldı.
+[18.12.2025 21:54:19] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[18.12.2025 21:54:28] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[18.12.2025 21:54:32] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[18.12.2025 21:54:33] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[18.12.2025 21:54:35] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[18.12.2025 21:58:30] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:05:29] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:05:30] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:15:46] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:15:48] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:22:40] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:23:36] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 00:23:42] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:23:51] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:34:48] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:34:49] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:42:22] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:42:23] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:47:13] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:47:14] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:47:22] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:47:22] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 00:47:56] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 00:47:56] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:02:55] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:02:56] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:11:19] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:11:20] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:15:42] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:15:42] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:16:05] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:18:03] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:18:04] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:22:43] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:22:43] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:24:19] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:24:19] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:27:17] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:27:18] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:27:37] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:27:38] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:28:02] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:28:03] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:33:59] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:34:00] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:44:24] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:44:25] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 01:45:08] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 01:45:08] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 03:21:32] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 03:21:34] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[19.12.2025 03:23:24] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 03:23:24] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[19.12.2025 03:25:45] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 03:25:47] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[19.12.2025 03:35:34] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 03:35:35] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[19.12.2025 03:48:16] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 03:48:17] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[19.12.2025 14:17:24] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 14:17:26] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[19.12.2025 14:17:36] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[19.12.2025 14:17:43] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[19.12.2025 14:17:53] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 14:18:11] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 14:19:46] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 14:19:50] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[19.12.2025 14:20:00] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[19.12.2025 14:20:03] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[19.12.2025 14:20:06] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 14:20:18] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[19.12.2025 14:20:22] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[19.12.2025 14:21:25] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 14:21:31] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[19.12.2025 14:21:42] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[19.12.2025 14:21:44] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[19.12.2025 14:21:47] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 14:22:04] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 14:47:06] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 14:47:13] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[19.12.2025 14:49:57] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[19.12.2025 14:50:50] GARSON EKLE - Eklendi: eskiKA=-, yeniKA=utku2, adSoyad=utku bera özkan
+[19.12.2025 14:50:57] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 14:51:00] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[19.12.2025 14:51:16] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 14:51:50] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 14:53:30] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[19.12.2025 14:58:24] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 14:58:28] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[19.12.2025 14:58:35] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 14:58:37] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[19.12.2025 14:59:06] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 15:00:41] ADMIN PANEL - Admin paneli açıldı.
+[19.12.2025 15:00:42] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[20.12.2025 18:03:16] ADMIN PANEL - Admin paneli açıldı.
+[20.12.2025 18:03:22] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[20.12.2025 18:03:50] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[20.12.2025 18:03:57] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[20.12.2025 18:04:03] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[20.12.2025 18:04:11] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[20.12.2025 18:04:36] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[20.12.2025 18:04:41] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[20.12.2025 18:04:50] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[20.12.2025 18:05:12] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[20.12.2025 18:05:26] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[20.12.2025 18:05:48] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[21.12.2025 00:15:48] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 00:15:49] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 00:21:32] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 00:21:33] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 00:23:29] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 00:23:33] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 00:23:37] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:38] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:40] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:41] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:42] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:43] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:45] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:49] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:51] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:52] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:53] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:54] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:56] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:23:57] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[21.12.2025 00:23:59] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[21.12.2025 00:24:01] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[21.12.2025 00:24:03] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 00:25:20] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 00:25:21] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 00:54:36] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 00:54:37] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 01:01:16] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 01:01:17] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 01:33:18] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 01:33:19] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 01:37:41] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 01:41:40] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 01:41:41] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 01:55:32] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 01:55:33] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 01:56:11] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 01:56:11] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 01:59:51] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 01:59:52] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 02:02:04] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 02:02:05] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 02:49:01] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 02:49:01] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 02:49:11] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 02:49:11] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 02:50:47] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 02:50:48] GARSON KONTROLÜ - Garson kontrol ekranı açıldı.
+[21.12.2025 02:50:52] MASA SORGULAMA - Masa noya göre sorgulama ekranı açıldı.
+[21.12.2025 02:50:58] TARİHE GÖRE SIRALAMA - Ödenmiş siparişler (tarihe göre) açıldı.
+[21.12.2025 02:51:00] GÜN SONU RAPORU - Gün sonu raporu ekranı açıldı.
+[21.12.2025 02:53:05] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 02:53:06] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 02:54:07] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 02:54:53] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 02:59:07] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 02:59:08] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:00:02] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:00:04] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:01:22] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:01:22] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:02:04] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:02:05] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:05:06] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:05:07] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:05:46] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:05:47] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:08:20] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:08:23] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:14:30] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:14:31] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:16:40] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:16:41] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:30:18] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:30:19] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:33:35] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:33:36] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:34:53] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:34:54] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:36:58] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:36:58] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:37:55] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:37:56] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:39:30] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:39:30] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:41:32] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:42:14] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:42:15] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:42:49] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:42:49] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.
+[21.12.2025 03:43:20] ADMIN PANEL - Admin paneli açıldı.
+[21.12.2025 03:43:21] MENÜ KONTROLÜ - Menü kontrol ekranı açıldı.

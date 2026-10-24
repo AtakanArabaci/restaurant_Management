@@ -1,0 +1,40 @@
+İçli Köfte;yemek;icons/iclikofte.jpg
+Maraş Tava;yemek;icons/marastava.jpg
+Iskender;yemek;icons/iskender.jpg
+Mantı;yemek;icons/manti.jpg
+Döner;yemek;icons/doner.jpg
+Tantuni;yemek;icons/tantuni.jpg
+Çökertme;yemek;icons/cokertme.jpg
+Kebap;yemek;icons/kebap.jpg
+Makarna;yemek;icons/makarna.jpg
+Lahmacun;yemek;icons/lahmacun.jpg
+Tavuk Şiş;yemek;icons/tavuksis.jpg
+Pizza;yemek;icons/pizza.jpg
+Hamburger;yemek;icons/hamburger.jpg
+
+
+Şalgam;icecek;icons/salgam.jpg
+Meyve Suyu;icecek;icons/meyvesuyu.jpg
+Türk Kahvesi;icecek;icons/turkkahvesi.jpg
+Sprite;icecek;icons/sprite.jpg
+Sıcak Çikolata;icecek;icons/sicakcikolata.jpg
+Milkshake;icecek;icons/milkshake.jpg
+Kola;icecek;icons/kola.jpg
+Fanta;icecek;icons/fanta.jpg
+Su;icecek;icons/su.jpg
+Ayran;icecek;icons/ayran.jpg
+Çay;icecek;icons/cay.jpg
+Soda;icecek;icons/soda.jpg
+
+Fıstık Sarma;tatli;icons/fistiksarma.jpg
+Maraş Dondurması;tatli;icons/marasdondurma.jpg
+Sütlaç;tatli;icons/sutlac.jpg
+Şöbiyet;tatli;icons/sobiyet.jpg
+Katmer;tatli;icons/katmer.jpg
+Trileçe;tatli;icons/trilece.jpg
+İrmik Helvası;tatli;icons/irmikhelvasi.jpg
+Pasta;tatli;icons/pasta.jpg
+Sufle;tatli;icons/sufle.jpg
+Profiterol;tatli;icons/profiterol.jpg
+Künefe;tatli;icons/kunefe.jpg
+Baklava;tatli;icons/baklava.jpg
